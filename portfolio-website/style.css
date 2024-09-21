@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #fff;
+  background-color: #000;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+nav ul li a:hover {
+  color: grey;
+}
+
+section {
+  padding: 155px 10px;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  margin: 75px 0 50px;
+  color: white;
+  padding: 145px 20px;
+  animation: fadeIn 1s ease-out;
+  overflow: hidden;
+  text-align: left;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("backgroudImg-not-me.jpg") no-repeat center center/cover;
+  filter: blur(7px);
+  z-index: -1;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative;
+}
+
+.hero h1 {
+  text-align: left;
+  font-size: 48px;
+  animation: slideIn 1.2s ease-out;
+
+}
+
+.hero h1 B {
+  color: grey;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  animation: slideIn 1.2s ease-out;
+
+}
+
+.hero .btn {
+  padding: 13px 18px;
+  margin-top: 20px;
+  background-color: grey;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.5s;
+  border: 2px solid grey;
+}
+
+.hero .btn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.about,
+.projects,
+.contact {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+
+}
+
+#projects h1 {
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.projects .project {
+  margin-top: 20px;
+  color: black;
+  background-color: rgb(174, 174, 174);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  animation: fadeIn 1.2s ease-out;
+  transition: all 0.5s ease;
+}
+
+.projects .project:hover {
+  transform: translateY(-10px);
+}
+
+.projects h1 {
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.projects .project h2 {
+  font-weight: 500;
+}
+
+.projects .project p {
+  font-weight: 300;
+}
+
+.pro-btn {
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: all 0.5s;
+  border: 2px solid #000;
+
+}
+
+.pro-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pro-btn:hover {
+  background-color: transparent;
+}
+
+.about {
+  display: flex;
+  align-items: center; 
+  padding: 150px 10px;
+}
+
+.about-content {
+  flex: 1; 
+  padding-right: 25px; 
+}
+
+.about-image {
+  flex-shrink: 0; 
+}
+
+.about h1 {
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: left;
+}
+
+.about p {
+  margin-top: 15px;
+  text-align: left;
+  width: 75%;
+}
+
+.about-image img {
+  max-width: 300px; 
+  border-radius: 15px; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.form {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+} 
+
+
+.contact h1 {
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+label {
+  color: #fff;
+  font-weight: 600;
+}
+
+input,
+textarea {
+
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px;
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+  border: 2px solid grey;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 10;
+  }
+
+  .nav-links.nav-active {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .nav-links.nav-active li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-links.nav-active li:nth-child(1) {
+    transition-delay: 0.2s;
+  }
+
+  .nav-links.nav-active li:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+
+  .nav-links.nav-active li:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+
+  .nav-links.nav-active li:nth-child(4) {
+    transition-delay: 0.5s;
+  }
+}
+
+/* Keyframes for slideIn animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

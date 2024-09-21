@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJLucHtAKPY.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo"> Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero">
+        <h1>Hello, I'm <B>Talha Jamal</B></h1>
+        <p><b>As a Front-End Developer, I build dynamic, responsive websites using modern tools like Next.js,
+                Typescript, and ShadcnUI.</b></p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <h2>Tic Tac Toe Game</h2>
+                <p>Tic-Tac-Toe is a simple two-player game where the first to align three "X"s or "O"s in a row, column,
+                    or diagonal on a 3x3 grid wins.</p>
+                <button class="pro-btn"><a href="https://tic-tac-toe-game-by-talha.vercel.app/" target="_blank">Click
+                        Here</a></button>
+            </div>
+            <div class="project">
+                <h2>Resume Builder</h2>
+                <p>It is a dynamic, editable & can be downloaded in Pdf form in which i use html, css & typescript
+                    logics it is also the project that is given by GIAIC.</p>
+                <button class="pro-btn"><a href="https://milestone-5-talha.vercel.app/" target="_blank">Click
+                        Here</a></button>
+            </div>
+            <div class="project">
+                <h2>Countdown Timer</h2>
+                <p>It is countdown timer where you can set timer pause, reset the timer I made this by using Next js and
+                    shadcn ui library.
+                </p>
+                <button class="pro-btn"><a href="https://30-days-of-30-projects-talha-day-01.vercel.app/"
+                        target="_blank">Click Here</a></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>Hi! I'm a front-end web developer with intermediate experience in crafting responsive and user-friendly
+                websites. I specialize in HTML, CSS, and JavaScript, and I'm passionate about turning ideas into
+                engaging
+                digital experiences.
+
+                I love tackling challenges and collaborating with others to build innovative solutions. When I'm not
+                coding,
+                I enjoy exploring new web trends and enhancing my design skills.
+
+                Let's connect and create something great together!</p>
+        </div>
+        <div class="about-image">
+            <img src="aboutImg.jpg" alt="About Image Error" />
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <form action="#" method="POST" class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Add Your Message" rows="3" required></textarea>
+            <button type="submit" class="btn-sub"><b>Send Message</b></button>
+        </form>
+    </section>
+
+    
+        <footer>
+                <p>&copy; 2024 Talha Jamal. All Rights Reserved.</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
